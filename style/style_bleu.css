@@ -103,6 +103,6 @@ footer {
 
 .card-row .card {
     flex: 1;
-    max-width: 45%; /* Limite la largeur des cartes */
+    max-width: 45%; /* Limite la largeur des cartes du site */
 }
 
