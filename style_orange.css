@@ -49,13 +49,13 @@ header h1 {
 nav {
     display: flex;
     justify-content: center;
-    background: #636e92;
+    background: #636E92;
     padding: 10px 0;
     margin-bottom: 20px;
 }
 
 nav a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     margin: 0 15px;
     letter-spacing: px;
@@ -64,7 +64,13 @@ nav a {
 
 nav a:hover {
     color: #FAB478;
+
 }
+
+footer a:hover {
+    color: #FAB478;
+}
+
 
 .container {
     padding: 20px;
@@ -73,7 +79,7 @@ nav a:hover {
 .card {
     background: #E0EDF6;
     border-radius: 20px;
-    color: #363636;
+    color: #333;
     margin: 40px auto;
     padding: 30px;
     max-width: 900px;
@@ -150,67 +156,3 @@ footer a {
     display: block;
 }
 
-
-/* Adaptation mobile*/
-@media screen and (max-width: 425px) {
-    .topnav a, .dropdown .dropbtn {
-      display: none;
-    }
-    .topnav a.icon {
-      float: left;
-      display: block;
-    }
-  
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-    header img{ 
-      margin-top: 5px;
-      margin-bottom: 5px;
-      width: 50%;
-    }
-    section {
-      width: 100%;
-      background-color: white;
-      margin: auto;
-    }
-    .topnav {
-      overflow: hidden;
-      background-color: #252525;
-      border: green 2px;
-      width: 100%;
-      margin: auto;
-    }
-    .container{
-      width: 100%;
-      overflow: auto;
-      padding: 5px 25px;
-    }
-    .container2{
-      overflow: auto;
-      padding: 5px 25px;
-    }
-    .accueil{
-      margin: auto;
-      text-align: center;
-      width: 100%;
-    }
-    .accueil img{
-      width: 100%;
-    }
-  }
