@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
+}
+
+html{height:100%;}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/background.png) no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffa500;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #E4CAAD;
+    border-radius: 20px;
+    color: #333;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: flex-start; /* Aligne les cartes verticalement */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+}
+
+.card-row .card {
+    flex: 1;
+    max-width: 45%; /* Limite la largeur des cartes */
+}
+
