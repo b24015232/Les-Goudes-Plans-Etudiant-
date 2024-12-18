@@ -31,6 +31,23 @@ header {
     color: rgb(255, 255, 255);
     height: 100px; 
 }
+.fixed {
+    position: fixed; /* Rend le bouton fixe */
+    bottom: 20px; /* Distance par rapport au bas de la fenêtre */
+    right: 20px; /* Distance par rapport au côté droit de la fenêtre */
+    background-color: #ff6600; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Enlever les bordures */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur pointeur */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour plus de style */
+    z-index: 1000; /* S'assure que le bouton reste au-dessus des autres éléments */
+}
+
+.fixed:hover {
+    background-color: #e65c00; /* Changement de couleur au survol */
+}
 
 .logo {
     position: absolute; 
