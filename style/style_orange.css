@@ -35,7 +35,7 @@ header {
     position: fixed; /* Rend le bouton fixe */
     bottom: 20px; /* Distance par rapport au bas de la fenêtre */
     right: 20px; /* Distance par rapport au côté droit de la fenêtre */
-    background-color: #ff6600; /* Couleur de fond */
+    background-color: #636E92; /* Couleur de fond */
     color: white; /* Couleur du texte */
     border: none; /* Enlever les bordures */
     border-radius: 5px; /* Coins arrondis */
