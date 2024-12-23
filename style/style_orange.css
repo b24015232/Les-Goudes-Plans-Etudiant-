@@ -20,7 +20,10 @@ body {
     font-family: Lalezar;
     margin: 0;
     padding: 0;
-    background-color: #faecdc;
+    background-image: url('../background.png');
+    background-size: cover; /* L'image couvre toute la page */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center; /* Centrer l'image */
 }
 
 header {
@@ -94,9 +97,9 @@ footer a:hover {
 }
 
 .card {
-    background: #E0EDF6;
+    background: rgba(51, 121, 147, 0.75);
     border-radius: 20px;
-    color: #333;
+    color: #ffffff;
     margin: 40px auto;
     padding: 30px;
     max-width: 900px;
