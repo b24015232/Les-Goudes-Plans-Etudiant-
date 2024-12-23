@@ -99,7 +99,7 @@ footer a:hover {
 .card {
     background: rgba(51, 121, 147, 0.75);
     border-radius: 20px;
-    color: #ffffff;
+    color: #d3d3d3;
     margin: 40px auto;
     padding: 30px;
     max-width: 900px;
