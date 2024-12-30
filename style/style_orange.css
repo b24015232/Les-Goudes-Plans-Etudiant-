@@ -20,36 +20,16 @@ body {
     font-family: Lalezar;
     margin: 0;
     padding: 0;
-    background-image: url('../background.png');
-    background-size: cover; /* L'image couvre toute la page */
-    background-repeat: no-repeat; /* Pas de répétition de l'image */
-    background-position: center; /* Centrer l'image */
+    background-color: #faecdc;
 }
 
 header {
-    background-color: #ffffff00;
+    background: url(../images/marseille_sunset.jpg) no-repeat center center;
     background-size: cover; 
     padding: 20px;
     text-align: center;
     color: rgb(255, 255, 255);
     height: 100px; 
-}
-.fixed {
-    position: fixed; /* Rend le bouton fixe */
-    bottom: 20px; /* Distance par rapport au bas de la fenêtre */
-    right: 20px; /* Distance par rapport au côté droit de la fenêtre */
-    background-color: #636E92; /* Couleur de fond */
-    color: white; /* Couleur du texte */
-    border: none; /* Enlever les bordures */
-    border-radius: 5px; /* Coins arrondis */
-    padding: 10px 20px; /* Espacement interne */
-    cursor: pointer; /* Curseur pointeur */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour plus de style */
-    z-index: 1000; /* S'assure que le bouton reste au-dessus des autres éléments */
-}
-
-.fixed:hover {
-    background-color: #e65c00; /* Changement de couleur au survol */
 }
 
 .logo {
@@ -97,9 +77,9 @@ footer a:hover {
 }
 
 .card {
-    background: rgba(51, 121, 147, 0.75);
+    background: #E0EDF6;
     border-radius: 20px;
-    color: #d3d3d3;
+    color: #333;
     margin: 40px auto;
     padding: 30px;
     max-width: 900px;
@@ -115,7 +95,7 @@ footer a:hover {
 
 footer {
     text-align: center;
-    background-color: #636e9200;
+    background: url(../images/Rocher_des_Goudes.jpg) no-repeat center center;
     padding: 30px;
     color: #fff;
     margin-top: 20px;
@@ -175,4 +155,3 @@ footer a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
