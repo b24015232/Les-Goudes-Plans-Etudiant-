@@ -1,14 +1,12 @@
 @charset "utf-8";
 
 *
-
-
 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin:0px;
-  padding:0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 @font-face {
@@ -16,52 +14,103 @@
   src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
 }
 
-html{height:100%;}
+html { height: 100%; }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Lalezar, sans-serif;
     margin: 0;
     padding: 0;
-    background: url(../images/background.png) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+    background: url(../images/background.jpg) repeat center center ;
+    background-size: auto; 
 }
 
-
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: #00000000;
     padding: 20px;
     text-align: center;
+    color: white;
+    height: 120px; 
+}
+
+.logo {
+    position: absolute; 
+    top: 10px;
+    left: 30px; 
+    height: 90px;
+    width: auto; 
+    
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 10px 0;
-    margin-bottom: 20px;
+    align-items: center;
+    background: #00000063; 
+    padding: 15px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ombre sous la navbar */
+    position: relative;
+
 }
-div.fixed {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 300px;
-  border: 3px solid #73AD21;
-}
+
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    transition: color 0.3s, text-shadow 0.3s;
+    
 }
 
 nav a:hover {
-    color: #ffa500;
+    color: #fff25e; /* Couleur dorée au survol */
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #118AD5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.fixed:hover {
+    background-color: #0E74B3;
+}
+
+footer {
+    text-align: center;
+    background: #00000063; 
+    padding: 30px;
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFD700;
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
 }
 
 .container {
@@ -69,7 +118,7 @@ nav a:hover {
 }
 
 .card {
-    background: #E4CAAD;
+    background: #D9F0FA;
     border-radius: 20px;
     color: #333;
     margin: 40px auto;
@@ -85,24 +134,53 @@ nav a:hover {
     margin-top: 20px;
 }
 
-footer {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    color: #fff;
-    margin-top: 40px;
-}
-
 .card-row {
     display: flex;
-    gap: 20px; /* Espace entre les cartes */
-    justify-content: center; /* Centre les cartes horizontalement */
-    align-items: flex-start; /* Aligne les cartes verticalement */
-    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .card-row .card {
     flex: 1;
-    max-width: 45%; /* Limite la largeur des cartes du site */
+    max-width: 45%;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00000063; 
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #00000052;
+    
+}
