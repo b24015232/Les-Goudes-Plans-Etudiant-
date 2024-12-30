@@ -58,28 +58,30 @@
 <div class="container">
     <section class="card" id="presentation">
         <h2>Vous souhaitez nous contacter ou faire partie de l’expérience ? Remplissez ce formulaire et contribuez directement à l’aventure, vos idées comptent !</h2>
-<form method="get" action="confirmation_formulaire.html">
-<div classe="formumaire">
+        <form method="get" action="confirmation_formulaire.html">
         
-    <p>
-        <label for="prenom">Votre nom et prénom :</label>
-        <input type="text" name="prenom" id="prenom" required>
-    </p>
-    <p>
-        <label for="mail">Votre mail :</label>
-        <input type="email" name="mail" id="mail" required>
-    </p>
-    <p>
-        <label for="reason"> Pourquoi vous nous contacter ? :</label>
-        <input type="text" name="reason" id="reason" required>
-    </p>
-</div>
-    <button type="submit">Envoyer</button>
-</form>
+            <span> 
+                <label for="prenom">Votre nom et prénom :</label>
+                <input type="text" name="prenom" id="prenom" required>
+            </span>
+            <span>
+                <label for="mail">Votre mail :</label>
+                <input type="email" name="mail" id="mail" required>
+            </span>
+            <br>
+            <span>
+                <label for="reason"> Pourquoi vous nous contacter ? :</label>
+                <br>
+                <textarea type="text" name="reason" id="reason" rows="4" cols="65" required> </textarea>
+            </span>
+        
+            <br>
+            <button type="submit">Envoyer</button>
+        </form>
 
 
 </section>
-
+</div>
 <div class="absolute">
     <form>
         <input type="BUTTON" value="↑" onclick="window.location.href='#top'" class="fixed">
