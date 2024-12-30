@@ -115,6 +115,7 @@ footer a:hover {
 footer {
     text-align: center;
     background: url(../images/Rocher_des_Goudes.jpg) no-repeat center center;
+    background-size: cover; 
     padding: 30px;
     color: #fff;
     margin-top: 20px;
@@ -174,3 +175,28 @@ footer a {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+span {
+    display: inline-block ;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    text-align: left;
+    /* Rectangle 8 */
+
+
+background: #C1C1C1;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+
+}
+
+label {
+    font-size: 80%;
+}
+
+input, textarea {
+    background-color: #C1C1C1 ;
+    border : none ;
+}
+
