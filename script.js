@@ -1,3 +1,5 @@
+/*FORMULAIRE*/
+
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.querySelector("form"); // Sélection du formulaire
     const prenomInput = document.getElementById("prenom"); // Champ prénom
@@ -27,3 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+/*RESPONSIVE TEST QIU MARCHE PAS BIEN*/
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}

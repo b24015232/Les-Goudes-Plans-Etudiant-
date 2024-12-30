@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
-    
+    <script src="script.js" defer> </script>
     <title>Les Goudes Plans Étudiants - Présentation</title>
 
 </head>
@@ -23,10 +23,10 @@
 
 </header>
 
-<nav>
+<!-- navigation avec menu burger -->
+<nav class="topnav" id="myTopnav">
     <a href="index.html">Présentation</a>
     <a href="parcs.html">Parcs</a>
-
     <div class="dropdown">
         <a href="cote_mer.html" class="dropbtn">Côté mer</a>
         <div class="dropdown-content">
@@ -36,12 +36,12 @@
     </div>
     <a href="restauration.html">Restauration</a>
     <div class="dropdown">
-    <a href="la_nuit.html" class="dropbtn">La nuit</a>
-    <div class="dropdown-content">
-        <a href="bars.html">Bars</a>
-        <a href="boites.html">Boites</a>
+        <a href="la_nuit.html" class="dropbtn">La nuit</a>
+        <div class="dropdown-content">
+            <a href="bars.html">Bars</a>
+            <a href="boites.html">Boites</a>
+        </div>
     </div>
-</div>
     <div class="dropdown">
         <a href="activites.html" class="dropbtn">Activités</a>
         <div class="dropdown-content">
@@ -50,7 +50,10 @@
             <a href="shopping.html">Shopping</a>
         </div>
     </div>
+    <!-- bouton menu burger qui marche pas trop-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
+
     <div class="absolute">
     <form>
         <input type="BUTTON" value="↑" onclick="window.location.href='#top'" class="fixed">
