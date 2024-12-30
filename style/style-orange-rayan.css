@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0px;
+  padding:0px;
+}
+
+@font-face {
+  font-family: "Lalezar";
+  src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
+}
+
+html{height:100%;}
+
+body {
+    font-family: Lalezar;
+    margin: 0;
+    padding: 0;
+    background-image: url('../background.png');
+    background-size: cover; /* L'image couvre toute la page */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center; /* Centrer l'image */
+}
+
+header {
+    background-color: #ffffff00;
+    background-size: cover; 
+    padding: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 100px; 
+}
+.fixed {
+    position: fixed; /* Rend le bouton fixe */
+    bottom: 20px; /* Distance par rapport au bas de la fenêtre */
+    right: 20px; /* Distance par rapport au côté droit de la fenêtre */
+    background-color: #636E92; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none; /* Enlever les bordures */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur pointeur */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour plus de style */
+    z-index: 1000; /* S'assure que le bouton reste au-dessus des autres éléments */
+}
+
+.fixed:hover {
+    background-color: #e65c00; /* Changement de couleur au survol */
+}
+
+.logo {
+    position: absolute; 
+    top: 10px;
+    left: 30px; 
+    height: 90px;
+    width: auto; 
+  }
+
+header h1 {
+    margin: 0;
+    letter-spacing: 2.1px;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #636E92;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    letter-spacing: px;
+    font-size: 1.5em;
+}
+
+nav a:hover {
+    color: #FAB478;
+
+}
+
+footer a:hover {
+    color: #FAB478;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: rgba(51, 121, 147, 0.75);
+    border-radius: 20px;
+    color: #d3d3d3;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #636e9200;
+    padding: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    letter-spacing: px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px; /* Espace entre les cartes */
+    justify-content: center; /* Centre les cartes horizontalement */
+    align-items: flex-start; /* Aligne les cartes verticalement */
+    flex-wrap: wrap; /* Permet le retour à la ligne si nécessaire */
+}
+
+.card-row .card {
+    flex: 1;
+    max-width: 45%; /* Limite la largeur des cartes */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Juste en dessous du bouton */
+    left: 50%; /* Centrage horizontal basé sur le bouton */
+    transform: translateX(-50%); /* Décalage pour centrer */
+    background-color: #636E92;
+    min-width: 10px; /* Largeur minimum pour une apparence uniforme */
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Afficher le menu au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
