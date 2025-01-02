@@ -24,10 +24,10 @@
 
 </header>
 
-<nav>
+<!-- navigation avec menu burger -->
+<nav class="topnav" id="myTopnav">
     <a href="index.html">Présentation</a>
     <a href="parcs.html">Parcs</a>
-
     <div class="dropdown">
         <a href="cote_mer.html" class="dropbtn">Côté mer</a>
         <div class="dropdown-content">
@@ -37,12 +37,12 @@
     </div>
     <a href="restauration.html">Restauration</a>
     <div class="dropdown">
-    <a href="la_nuit.html" class="dropbtn">La nuit</a>
-    <div class="dropdown-content">
-        <a href="bars.html">Bars</a>
-        <a href="boites.html">Boites</a>
+        <a href="la_nuit.html" class="dropbtn">La nuit</a>
+        <div class="dropdown-content">
+            <a href="bars.html">Bars</a>
+            <a href="boites.html">Boites</a>
+        </div>
     </div>
-</div>
     <div class="dropdown">
         <a href="activites.html" class="dropbtn">Activités</a>
         <div class="dropdown-content">
@@ -50,7 +50,12 @@
             <a href="activites_sportives.html">Sportives</a>
             <a href="shopping.html">Shopping</a>
         </div>
+        
     </div>
+
+    
+    <!-- bouton menu burger qui marche pas trop-->
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 
 
@@ -63,11 +68,7 @@
     </form>
 </div>
 
-<div class="absolute">
-    <form>
-        <input type="BUTTON" value="↑" onclick="window.location.href='#top'" class="fixed">
-    </form>
-</div>
+
 
 
 
