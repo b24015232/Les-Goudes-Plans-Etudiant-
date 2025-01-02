@@ -8,10 +8,11 @@
     <meta name="author" lang="fr" content="ARSENA Claire, BURBECK Heather et TRAIKIA Rayane">
     <meta name="Description" content="Ce site est un site de bons plans étudiants pour ceux étant sur Marseille totalement fictif. Il a été produit dans le cadre d'un projet pour l'IUT Aix-Marseille." >
     <link rel="stylesheet" href="style/style_orange.css">
+    <link rel="stylesheet" href="style/style_bleu.css" id="style_bleu-stylesheet" disabled>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
-    
+    <script src="script.js" defer> </script>
     <title>Les Goudes Plans Étudiants - Présentation</title>
 
 </head>
@@ -51,6 +52,15 @@
         </div>
     </div>
 </nav>
+
+<!--Bouton changement de style-->
+<input type="checkbox" id="darkmode-toggle" class="orange" onclick="toggleBleuMode()"/>
+<label for="darkmode-toggle" class="dark"></label>
+    <div class="absolute">
+    <form>
+        <input type="BUTTON" value="↑" onclick="window.location.href='#top'" class="fixed">
+    </form>
+</div>
 
 <div class="absolute">
     <form>

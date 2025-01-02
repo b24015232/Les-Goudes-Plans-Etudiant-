@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    background: url(../images/marseille_sunset.jpg) no-repeat center center;
+    background: url(../images/Rocher_des_Goudes.jpg) no-repeat center center;
     background-size: cover; 
     padding: 20px;
     text-align: center;
@@ -58,7 +58,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    letter-spacing: px;
+    letter-spacing: 1px;
     font-size: 1.5em;
 }
 
@@ -155,7 +155,7 @@ footer a {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 100%; /* Juste en dessous du bouton */
+    top: 80%; /* Juste en dessous du bouton */
     left: 50%; /* Centrage horizontal basé sur le bouton */
     transform: translateX(-50%); /* Décalage pour centrer */
     background-color: #636E92;
@@ -200,3 +200,40 @@ input, textarea {
     border : none ;
 }
 
+
+
+.dark {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    margin-left: 5px;
+    display: block;
+    background: #ffffffed;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.dark:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 1px; /* Position initiale du cercle */
+    background: linear-gradient(180deg, #f8f7f6, #FAB478);
+    border-radius: 180px;
+    transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label:after {
+    left: 49px; /* Position du cercle quand l'input est coché */
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#f8f7f6, #FFD700);/* Modifier la couleur du cercle */
+   
+}

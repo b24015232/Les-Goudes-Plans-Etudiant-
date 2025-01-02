@@ -17,15 +17,17 @@
 html { height: 100%; }
 
 body {
-    font-family: Lalezar, sans-serif;
+    font-family: Lalezar;
     margin: 0;
     padding: 0;
     background: url(../images/background.jpg) repeat center center ;
     background-size: auto; 
+    
 }
 
 header {
-    background-color: #00000000;
+    background : #00000000;
+    background-size: cover ;
     padding: 20px;
     text-align: center;
     color: white;
@@ -43,7 +45,7 @@ header {
 
 header h1 {
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 2.1px;
     font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -53,7 +55,8 @@ nav {
     justify-content: center;
     align-items: center;
     background: #00000063; 
-    padding: 15px 0;
+    margin-bottom: 20px;
+    padding: 10px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* ombre sous la navbar */
     position: relative;
 
@@ -62,9 +65,9 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 15px;
     letter-spacing: 1px;
-    font-size: 1.4em;
+    font-size: 1.5em;
     transition: color 0.3s, text-shadow 0.3s;
     
 }
@@ -175,7 +178,7 @@ footer a:hover {
     text-decoration: none;
     padding: 10px 15px;
     display: block;
-    transition: background-color 0.3s;
+    transition: background-color 5s;
     
 }
 
@@ -183,33 +186,45 @@ footer a:hover {
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #00000052;
-    
+
+.dark {
+    width: 50px;
+    height: 20px;
+    position: relative;
+    margin-left: 5px;
+    display: block;
+    background: #ffffff4c;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.dark:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 1px; /* Position initiale du cercle */
+    background: linear-gradient(180deg, #f8f7f6, #FAB478);
+    border-radius: 180px;
+    transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
+}
+
+input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+input:checked + label:after {
+    left: 49px; /* Position du cercle quand l'input est coché */
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#f8f7f6, #FFD700);/* Modifier la couleur du cercle */
+   
 }
 
 
+  
+  
 
-
-/* test menu burgouzz */
-@media screen and (max-width: 768px) {
-
-    .topnav {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px 20px;
-    }
-
-    .topnav a {
-        display: none; 
-    }
-
-    .topnav .icon {
-        display: block; 
-    }
-
-    .topnav.responsive a {
-        display: block; 
-        text-align: left;
-    }
-}
+  

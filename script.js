@@ -40,3 +40,9 @@ function myFunction() {
         x.className = "topnav";
     }
 }
+
+function toggleBleuMode() {
+    var bleuModeStylesheet = document.getElementById("style_bleu-stylesheet");
+    bleuModeStylesheet.disabled = !bleuModeStylesheet.disabled
+  }
+
