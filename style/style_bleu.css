@@ -219,7 +219,7 @@ input {
 input:checked + label:after {
     left: 49px; /* Position du cercle quand l'input est coché */
     transform: translateX(-100%);
-    background: linear-gradient(180deg,#f8f7f6, #FFD700);/* Modifier la couleur du cercle */
+    background: linear-gradient(180deg,#f8f7f6, #4dacff);/* Modifier la couleur du cercle */
    
 }
 
