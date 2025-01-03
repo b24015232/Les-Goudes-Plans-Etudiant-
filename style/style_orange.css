@@ -84,7 +84,7 @@ nav a:hover {
     padding: 10px 20px; /* Espacement interne */
     cursor: pointer; /* Curseur pointeur */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ombre pour plus de style */
-    z-index: 10000; /* S'assure que le bouton reste au-dessus des autres éléments */
+    z-index: 1000; /* S'assure que le bouton reste au-dessus des autres éléments */
 }
 
 .fixed:hover {
@@ -155,13 +155,14 @@ footer a {
 /* Dropdown button */
 .dropbtn {
     cursor: pointer;
+    padding: 7px;
 }
 
 /* Dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 80%; /* Juste en dessous du bouton */
+    top: 126%; /* Juste en dessous du bouton */
     left: 50%; /* Centrage horizontal basé sur le bouton */
     transform: translateX(-50%); /* Décalage pour centrer */
     background-color: #636E92;
@@ -208,11 +209,6 @@ input, textarea {
     border : none ;
 }
 
-/*
-section {
-    
-}
-*/
 
 .dark {
     width: 50px;
@@ -220,7 +216,7 @@ section {
     position: relative;
     margin-left: 5px;
     display: block;
-    background: #ffffffed;
+    background: #ffffff4c;
     border-radius: 200px;
     cursor: pointer;
 }
@@ -234,7 +230,7 @@ section {
     left: 1px; /* Position initiale du cercle */
     background: linear-gradient(180deg, #f8f7f6, #FAB478);
     border-radius: 180px;
-    transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
+    transition:  0.1s ease; /* Transition pour le déplacement du cercle */
 }
 
 input {
@@ -243,12 +239,6 @@ input {
     visibility: hidden;
 }
 
-input:checked + label:after {
-    left: 49px; /* Position du cercle quand l'input est coché */
-    transform: translateX(-100%);
-    background: linear-gradient(180deg,#f8f7f6, #FFD700);/* Modifier la couleur du cercle */
-   
-}
 
 .topnav a.icon {
       

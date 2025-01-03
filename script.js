@@ -44,5 +44,36 @@ function myFunction() {
 function toggleBleuMode() {
     var bleuModeStylesheet = document.getElementById("style_bleu-stylesheet");
     bleuModeStylesheet.disabled = !bleuModeStylesheet.disabled
-  }
+
+
+
+if (bleuModeStylesheet.disabled) {
+        localStorage.setItem("theme", "normal");
+    } else {
+        localStorage.setItem("theme", "bleu");
+    }
+}
+    
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var savedTheme = localStorage.getItem("theme");
+
+    const buttonAfter = "dark:after";
+    var button = "dark" ;
+    if (savedTheme === "bleu") {
+        document.getElementById("style_bleu-stylesheet").disabled = false;
+        button = buttonAfter ;
+
+
+    } else {
+        document.getElementById("style_bleu-stylesheet").disabled = true;
+        
+    }
+});
+
+
+
+
 

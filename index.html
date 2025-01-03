@@ -13,14 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
     <script src="script.js" defer> </script>
-    
-    <!--favicon-->
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48">
-    <link rel="apple-touch-icon" href="images/favicon-180x180.png" sizes="180x180">
-    <link rel="shortcut icon" href="images/favicon.ico">
-
     <title>Les Goudes Plans Étudiants - Présentation</title>
     
 
@@ -30,6 +22,7 @@
 <header>
     <h1>Les Goudes Plans Étudiants</h1>
     <img src="images\logo-lgpe.png" alt="Logo" class="logo">
+
 </header>
 
 <!-- navigation avec menu burger -->
@@ -58,15 +51,24 @@
             <a href="activites_sportives.html">Sportives</a>
             <a href="shopping.html">Shopping</a>
         </div>
+        
     </div>
+
+    
     <!-- bouton menu burger qui marche pas trop-->
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
 
 <!--Bouton changement de style-->
-<input type="checkbox" id="darkmode-toggle" class="orange" onclick="toggleBleuMode()"/>
+<input type="checkbox" id="darkmode-toggle" onclick="toggleBleuMode()"/>
 <label for="darkmode-toggle" class="dark"></label>
 
+
+<div class="absolute">
+    <form>
+        <input type="BUTTON" value="↑" onclick="window.location.href='#top'" class="fixed">
+    </form>
+</div>
 
 
 <div class="container">
@@ -85,11 +87,12 @@
             <iframe 
                 src="https://www.google.fr/maps/embed?pb=!1m18!1m12!1m3!1d44819.6431717582!2d5.3566922!3d43.3221994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12c9c037cdf01b89%3A0x90c7f7ec7b3a0239!2sMarseille!5e0!3m2!1sfr!2sfr!4v1700000000000!5m2!1sfr!2sfr" 
                 width="100%" 
-                height="300" 
+                height="300%" 
                 style="border:0; border-radius: 20px; margin-top: 20px;" 
                 allowfullscreen="" 
                 loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+                class="maps">
             </iframe>
         </section>
     </div>

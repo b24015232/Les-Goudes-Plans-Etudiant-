@@ -104,7 +104,7 @@ footer {
     padding: 30px;
     color: white;
     margin-top: 20px;
-    font-size: 1.2em;
+
 }
 
 footer a {
@@ -163,7 +163,7 @@ footer a:hover {
 
 .dropbtn {
     cursor: pointer;
-    padding: 20px;
+    padding: 7px;
 }
 
 .dropdown-content {
@@ -173,16 +173,16 @@ footer a:hover {
     left: 50%;
     transform: translateX(-50%);
     background: #00000063; 
-    min-width: 150px;
+    min-width: 10px ;
     text-align: center;
-    z-index: 10;
+    
     
 }
 
 .dropdown-content a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 5px 1px;
     display: block;
     transition: background-color 5s;
     
@@ -210,8 +210,8 @@ footer a:hover {
     height: 18px;
     position: absolute;
     top: 1px;
-    left: 1px; /* Position initiale du cercle */
-    background: linear-gradient(180deg, #f8f7f6, #00b3ff);
+    left: 31px; /* Position initiale du cercle */
+    background: linear-gradient(180deg, #f8f7f6, #FFD700);
     border-radius: 180px;
     transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
 }
@@ -225,8 +225,6 @@ input {
 input:checked + label:after {
     left: 49px; /* Position du cercle quand l'input est coché */
     transform: translateX(-100%);
-    background: linear-gradient(180deg,#f8f7f6, #00b3ff);/* Modifier la couleur du cercle */
-   
 }
 
 .topnav a.icon {
@@ -297,9 +295,15 @@ input:checked + label:after {
     }
     
     .dark:after {
+        content: "";
         width: 10px;
         height: 10px;
-       
+        position: absolute;
+        top: 1px;
+        left: 9px; /* Position initiale du cercle */
+        background: linear-gradient(180deg, #f8f7f6, #FFD700);
+        border-radius: 180px;
+        transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
     }
     
     input:checked + label:after {
