@@ -81,27 +81,29 @@
 <div class="container">
     <section class="card" id="presentation">
         <h2>Vous souhaitez nous contacter ou faire partie de l’expérience ? Remplissez ce formulaire et contribuez directement à l’aventure, vos idées comptent !</h2>
-        <form method="get" action="confirmation_formulaire.html">
-        
-            <span> 
-                <label for="prenom">Votre nom et prénom :</label>
+        <div class="container">
+            <section class="card" id="presentation">
+                <h2>Vous souhaitez nous contacter ou faire partie de l’expérience ? Remplissez ce formulaire et contribuez directement à l’aventure, vos idées comptent !</h2>
+                <form action="mailto:lesgoudesplanetudiant@gmail.com" method="POST">
+            
+                <label for="nom">Votre prénom et votre prénom : </label>
                 <input type="text" name="prenom" id="prenom" required>
-            </span>
-            <span>
+            
+            
                 <label for="mail">Votre mail :</label>
                 <input type="email" name="mail" id="mail" required>
-            </span>
-            <br>
-            <span>
+            
+            
                 <label for="reason"> Pourquoi vous nous contacter ? :</label>
-                <br>
-                <textarea type="text" name="reason" id="reason" rows="4" cols="65" required> </textarea>
-            </span>
-        
-            <br>
-            <button type="submit">Envoyer</button>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+            
+                <input type="submit" value="Envoyer">
         </form>
 
+        <div class="form-footer">
+            <p>Nous vous répondrons dans les plus brefs délais.</p>
+        </div>
 
 </section>
 </div>

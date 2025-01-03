@@ -216,11 +216,7 @@ footer a:hover {
     transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
 }
 
-input {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
+
 
 input:checked + label:after {
     left: 49px; /* Position du cercle quand l'input est coché */

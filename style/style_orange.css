@@ -210,6 +210,10 @@ input, textarea {
 }
 
 
+.orange {
+    visibility: hidden;
+}
+
 .dark {
     width: 50px;
     height: 20px;
@@ -233,11 +237,7 @@ input, textarea {
     transition:  0.1s ease; /* Transition pour le déplacement du cercle */
 }
 
-input {
-    width: 0;
-    height: 0;
-    visibility: hidden;
-}
+
 
 
 .topnav a.icon {
