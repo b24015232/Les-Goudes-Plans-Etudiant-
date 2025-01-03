@@ -163,7 +163,7 @@ footer a:hover {
 
 .dropbtn {
     cursor: pointer;
-    padding: 7px;
+    padding: 10px;
 }
 
 .dropdown-content {
@@ -268,8 +268,19 @@ input:checked + label:after {
           float: none;
           
       }
-  
-  
+    
+
+      .dropbtn {
+        cursor: pointer;
+        padding: 0px;
+    }
+      .dropdown-content {
+       
+        background: #00000000; 
+       
+        
+        
+    }
       .topnav.responsive .dropdown-content {
           position: relative;
       }

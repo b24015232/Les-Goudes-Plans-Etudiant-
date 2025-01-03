@@ -155,7 +155,7 @@ footer a {
 /* Dropdown button */
 .dropbtn {
     cursor: pointer;
-    padding: 7px;
+    padding: 10px;
 }
 
 /* Dropdown content */
@@ -286,12 +286,19 @@ input, textarea {
         
     }
 
+    .dropbtn {
+        cursor: pointer;
+        padding: 0px;
+    }
 
     .topnav.responsive .dropdown-content {
         position: relative;
     }
   
-
+    .dropbtn {
+        cursor: pointer;
+        padding: 0px;
+    }
 
     header {
         height: auto;
