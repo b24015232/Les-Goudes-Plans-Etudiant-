@@ -205,15 +205,16 @@ section .form-group {
     padding: 20px;
 }
 
-input, textarea, button {
+section input, textarea {
     background-color: #C1C1C1 ;
     border : none ;
     border-radius: 10px;
     padding: 10px;
+    width: 90%
 }
 
 textarea {
-    width: 370px
+    width: 90%
     
 }
 
@@ -221,6 +222,7 @@ button {
     background-color: #C1C1C1;
     border : none ;
     padding: 5px;
+    border-radius: 10px;
 }
 
 button:hover {
