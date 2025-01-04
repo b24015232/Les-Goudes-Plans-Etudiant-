@@ -365,3 +365,65 @@ input, textarea {
    
   }
 }
+
+/*card pour les activitees culturelles*/
+/*style, alignement, overlay, survol, texte et images*/
+
+
+.card2 {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 25px; 
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.card2:hover img {
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+
+.card2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e0edf625;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.card2 .overlay h2 {
+    color: #f4f4f4;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.card2:hover .overlay {
+    opacity: 1;
+}
+
+
+.card-row2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
