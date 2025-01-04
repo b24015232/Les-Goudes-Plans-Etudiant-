@@ -112,10 +112,25 @@ footer a:hover {
     text-align: center;
 }
 
+.card3 {
+    background: transparent;
+    border-radius: 0px;
+    color: #333;
+    margin: 5px auto;
+    padding: 30px;
+    max-width: 900px;
+    text-align: center;
+}
+.card3 img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
 .card img {
     max-width: 100%;
     border-radius: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 footer {
@@ -143,6 +158,11 @@ footer a {
 }
 
 .card-row .card {
+    flex: 1;
+    max-width: 80%;
+}
+
+.card-row .card3 {
     flex: 1;
     max-width: 80%;
 }
@@ -197,7 +217,7 @@ section h1 {
 
 section .form-row {
     display: flex;
-    gap: 30%;
+    gap: 50px;
     justify-content: center;
 }
 
@@ -346,6 +366,11 @@ button:hover {
         max-width: none;
     }
 
+    .card-row .card3 {
+        flex: 1;
+        max-width: none;
+    }
+
     h2 {
         font-size: small;
     }
@@ -361,6 +386,9 @@ button:hover {
     }
 
     .card {
+        width: 100%;
+    }
+    .card3 {
         width: 100%;
     }
 
