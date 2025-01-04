@@ -188,27 +188,44 @@ footer a {
 
 
 /* style du formulaire */
-span {
-    display: inline-block ;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    text-align: left;
-    background: #C1C1C1;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 
+
+section h1 {
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+  }
+
+section .form-row {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
 }
 
-label {
-    font-size: 80%;
+section .form-group {
+    padding: 20px;
 }
 
-input, textarea {
+input, textarea, button {
     background-color: #C1C1C1 ;
     border : none ;
+    border-radius: 10px;
+    padding: 10px;
 }
 
+textarea {
+    width: 370px
+    
+}
+
+button {
+    background-color: #C1C1C1;
+    border : none ;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #ffffff ;
+}
 
 .orange {
     visibility: hidden;
