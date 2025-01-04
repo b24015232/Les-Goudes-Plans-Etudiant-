@@ -474,3 +474,41 @@ button:hover {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
+
+/*partie plages*/
+
+
+.section-1, .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #faecdc6a;
+
+}
+
+.section-2 {
+    flex-direction: reverse;
+    background-color: #ff8c003e;
+}
+
+.text-1 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image-1{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.image-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ffc16a;
+}

@@ -423,3 +423,41 @@ input:checked + label:after {
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
+
+
+/*partie plages*/
+
+
+.section-1, .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #00000012;
+}
+
+.section-2 {
+    flex-direction: reverse;
+    background-color: #ffffff3e;
+}
+
+.text-1 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.image-1{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.image-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #4e6481;
+}
