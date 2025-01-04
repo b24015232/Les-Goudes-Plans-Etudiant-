@@ -476,7 +476,7 @@ button:hover {
 }
 
 
-/*partie plages*/
+/*partie plages et parcs*/
 
 
 .section-1, .section-2 {
@@ -503,12 +503,12 @@ button:hover {
 
 .image-1{
     flex: 1;
-    min-width: 300px;
-    padding: 20px;
+    min-width: 100px;
+    padding: 10px;
 }
 
 .image-1 img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
