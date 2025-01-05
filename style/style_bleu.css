@@ -433,7 +433,6 @@ input:checked + label:after {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    background-color: #00000012;
 }
 
 .section-2 {
@@ -443,6 +442,7 @@ input:checked + label:after {
 
 .text-1 {
     flex: 1;
+    font-size: 100%;
     min-width: 300px;
     padding: 20px;
     display: flex;

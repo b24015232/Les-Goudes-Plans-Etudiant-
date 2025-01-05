@@ -411,6 +411,42 @@ button:hover {
       height: 50%;
    
   }
+
+
+  /*partie plages et parcs*/
+
+
+.section-1, .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.section-2 {
+    flex-direction: reverse;
+}
+
+.text-1 {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+}
+
+.image-1{
+    flex: 1;
+    min-width: 100px;
+    padding: 10px;
+}
+
+.image-1 img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ffc16a;
+}
+
+
 }
 
 /*card pour les activitees culturelles*/
@@ -483,7 +519,6 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
-    background-color: #faecdc6a;
 
 }
 
