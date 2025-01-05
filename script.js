@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/*RESPONSIVE TEST QIU MARCHE PAS BIEN*/
+/*Menu version mobile*/
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -41,12 +41,19 @@ function myFunction() {
     }
 }
 
+
+
+
+
+/*Mode bleu*/
+
+/*Fonction qui switch d'une feuille de style à une autre*/
 function toggleBleuMode() {
     var bleuModeStylesheet = document.getElementById("style_bleu-stylesheet");
     bleuModeStylesheet.disabled = !bleuModeStylesheet.disabled
 
 
-
+/* Fonction qui enregistre le mode choisie dans le localStorage */ 
 if (bleuModeStylesheet.disabled) {
         localStorage.setItem("theme", "normal");
     } else {
@@ -56,12 +63,10 @@ if (bleuModeStylesheet.disabled) {
     
 
 
-
+/*Fonction qui applique le theme choisi à toutes les pages lors de la navigation ou d'un rafraichissement*/
 document.addEventListener("DOMContentLoaded", function() {
     var savedTheme = localStorage.getItem("theme");
 
-    const buttonAfter = "dark:after";
-    var button = "dark" ;
     if (savedTheme === "bleu") {
         document.getElementById("style_bleu-stylesheet").disabled = false;
         button = buttonAfter ;
