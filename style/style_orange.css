@@ -131,11 +131,12 @@ nav a:hover {
     display: none;
 }
 
+.topnav {
+    display: none;
+}
+
 /* Bouton hamburger masqué */
-.topnav a.icon {
-      
-    display: none ;
-  }
+
 
 /* Style bouton d'ancrage */
 
@@ -427,13 +428,25 @@ button:hover {
         display: block;
     }
 
+    .topnav {
+        display: block;
+    }
+
+    .topnav-desktop {
+        display: none ;
+        height: 0px;
+        width: 0px ;
+    }
+
+    
+
     /* adaptativité mobile et configuation du bouton hamburger */
 
     .topnav a.icon {
       position: relative;
-      left: -45%;
       display: block;
     }
+
 
     .topnav.responsive {
         position: relative; 

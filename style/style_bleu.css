@@ -243,7 +243,6 @@ input:checked + label:after {
       .topnav a.icon {
         
         position: relative;
-        left: -45%;
         display: block;
       }
   
