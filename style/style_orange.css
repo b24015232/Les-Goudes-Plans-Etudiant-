@@ -183,7 +183,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
-    padding: 30px;
+    font-size: small;
     letter-spacing: px;
 }
 
@@ -246,9 +246,7 @@ footer a {
     max-width: 80%;
 }
 
-p {
-    font-size: 30px;
-}
+
 
 
 
@@ -394,6 +392,7 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    gap : 20px;
 
 }
 
@@ -404,16 +403,18 @@ button:hover {
 
 .text-1 {
     flex: 1;
-    min-width: 300px;
+    font-size: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
+    min-width: 200px;
+    letter-spacing: 0.5px;
     
 }
 
 .image-1{
     flex: 1;
-    min-width: 100px;
+    max-width: 100% ;
     padding: 20px;
 }
 
@@ -422,6 +423,7 @@ button:hover {
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
+    min-width: 300px;
 }
 
 @media screen and (max-width: 870px) {
@@ -534,7 +536,7 @@ button:hover {
     }
     
     p {
-        font-size: medium ;
+        font-size: 80% ;
     }
 
     .card-row {
@@ -543,6 +545,8 @@ button:hover {
 
     }
 
+    .card {
+        width: 100%;
     }
     .card3 {
         width: 100%;
@@ -559,8 +563,6 @@ button:hover {
      
     }
 
-    
-
     /* adaptation logo  */
 
     .logo {
@@ -575,46 +577,8 @@ button:hover {
     
 
 
-  /*adaptation partie plages et parcs*/
+  
 
 
-    .section-1, .section-2 {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-    }
-
-    .section-2 {
-        flex-direction: reverse;
-    }
-
-    .text-1 {
-        flex: 1;
-        min-width: 300px;
-        padding: 20px;
-        display: flex;
-    }
-
-    .image-1{
-        flex: 1;
-        min-width: 100px;
-        padding: 10px;
-    }
-
-    .image-1 img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        border: 2px solid #ffc16a;
-    }
-
-    
-/*calanques*/
-
-.text-2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
 }
-
 
