@@ -32,7 +32,7 @@ body {
 /* Style header */
 
 header {
-    background: url(../images/marseille_sunset.jpg) no-repeat center center;
+    background: url(../images/marseille_sunset.webp) no-repeat center center;
     background-size: cover; 
     padding: 20px;
     text-align: center;
@@ -168,7 +168,7 @@ footer a:hover {
 
 footer {
     text-align: center;
-    background: url(../images/Rocher_des_Goudes.jpg) no-repeat center center;
+    background: url(../images/Rocher_des_Goudes.webp) no-repeat center center;
     background-size: cover; 
     padding: 30px;
     color: #fff;
