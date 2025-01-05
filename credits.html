@@ -33,8 +33,7 @@
 
 </header>
 
-<!-- navigation -->
-<nav class="topnav" id="myTopnav">
+<nav class="topnav-desktop" >
     <a href="index.html">Présentation</a>
     <a href="parcs.html">Parcs</a>
     <div class="dropdown"> <!-- sous menu -->
@@ -62,10 +61,39 @@
         
     </div>
 
-    
+</nav>
+
+<!-- navigation mobile -->
+<nav class="topnav" id="myTopnav">
+    <a href="index.html">Présentation</a>
+    <a href="parcs.html">Parcs</a>
+
+    <!-- Cote mer (menu deroulant)-->
+    <a href="#"onclick="toggleMenu('menuCoteMer')">Côté Mer</a>
+    <ul id="menuCoteMer" class="menuList">
+      <li><a href="plages.html">Plages</a></li>
+      <li><a href="calanques.html">Calanques</a></li>
+    </ul>
+    <a href="restauration.html">Restauration</a>
+    <!-- La nuit (menu déroulant) -->
+    <a href="#"onclick="toggleMenu('menuNuit')">La nuit</a>
+    <ul id="menuNuit" class="menuList">
+      <li><a href="bars.html">Bars</a></li>
+      <li><a href="boites.html">Boîtes</a></li>
+    </ul>
+
+    <!-- Activités (menu déroulant) -->
+    <a href="#"onclick="toggleMenu('menuActivites')">Activités</a>
+    <ul id="menuActivites" class="menuList">
+      <li><a href="activites_culturelles.html">Culturelles</a></li>
+      <li><a href="activites_sportives.html">Sportives</a></li>
+      <li><a href="shopping.html">Shopping</a></li>
+    </ul>
+        
     <!-- bouton menu burger qui marche pas trop-->
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </nav>
+
 
 
 <!--Bouton changement de style-->

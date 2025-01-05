@@ -41,10 +41,6 @@ function myFunction() {
     }
 }
 
-
-
-
-
 /*Mode bleu*/
 
 /*Fonction qui switch d'une feuille de style à une autre*/
@@ -76,9 +72,18 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("style_bleu-stylesheet").disabled = true;
         
     }
+    
 });
 
-
-
-
+ // Fonction pour afficher ou cacher les sous-menus
+ function toggleMenu(menuId) {
+    var menu = document.getElementById(menuId);
+    
+    // Vérifie si le menu est actuellement caché
+    if (menu.style.display === 'none' || menu.style.display === '') {
+      menu.style.display = 'block';  // Affiche le menu
+    } else {
+      menu.style.display = 'none';   // Cache le menu
+    }
+  }
 
