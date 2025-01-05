@@ -150,6 +150,7 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
+
 .card-row .card {
     flex: 1;
     max-width: 45%;
@@ -324,11 +325,11 @@ input:checked + label:after {
     }
 
     h2 {
-        font-size: small;
+        font-size: large;
     }
     
     p {
-        font-size: x-small;
+        font-size: 80%;
     }
 
     .card-row {
@@ -452,7 +453,7 @@ input:checked + label:after {
 
 .image-1{
     flex: 1;
-    min-width: 100px;
+    max-width: 100% ;
     padding: 20px;
 }
 

@@ -407,7 +407,7 @@ button:hover {
     padding: 20px;
     display: flex;
     align-items: center;
-    min-width: 200px;
+    min-width: 300px;
     letter-spacing: 0.5px;
     
 }
@@ -423,7 +423,7 @@ button:hover {
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
-    min-width: 300px;
+    min-width: 180px;
 }
 
 @media screen and (max-width: 870px) {
