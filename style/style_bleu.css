@@ -462,3 +462,16 @@ input:checked + label:after {
     border-radius: 8px;
     border: none ;
 }
+
+/*texte centré*/
+
+
+
+.text-2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #f8f7f6;
+    font-size: 2em;
+}
+
