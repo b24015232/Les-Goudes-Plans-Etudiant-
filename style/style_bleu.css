@@ -436,7 +436,6 @@ input:checked + label:after {
 }
 
 .section-2 {
-    flex-direction: reverse;
     background-color: #ffffff3e;
 }
 
