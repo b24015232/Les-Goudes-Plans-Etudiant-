@@ -184,7 +184,6 @@ footer a {
     text-decoration: none;
     margin: 0 15px;
     font-size: small;
-    letter-spacing: px;
 }
 
 
@@ -397,7 +396,6 @@ button:hover {
 }
 
 .section-2 {
-    flex-direction: reverse;
     background-color: #ff8c003e;
 }
 
@@ -414,16 +412,18 @@ button:hover {
 
 .image-1{
     flex: 1;
-    max-width: 100% ;
+    max-width: 60% ;
     padding: 20px;
 }
 
 .image-1 img {
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
     min-width: 180px;
+    max-width: 50% ;
+    
 
     
 }
