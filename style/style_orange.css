@@ -18,7 +18,11 @@
   src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
 }
 
-html{height:100%;}
+html{
+    height:100%;
+}
+
+
 
 /* Style body */
 
@@ -179,6 +183,7 @@ footer a {
     color: #fff;
     text-decoration: none;
     margin: 0 15px;
+    padding: 30px;
     letter-spacing: px;
 }
 
@@ -202,7 +207,7 @@ footer a {
 
 .card3 {
     background: transparent;
-    border-radius: 0px;
+    border-radius: 20px;
     color: #333;
     margin: 5px auto;
     padding: 30px;
@@ -239,6 +244,10 @@ footer a {
 .card-row .card3 {
     flex: 1;
     max-width: 80%;
+}
+
+p {
+    font-size: 20px;
 }
 
 
@@ -521,11 +530,11 @@ button:hover {
     }
 
     h2 {
-        font-size: small;
+        font-size: large;
     }
     
     p {
-        font-size: x-small;
+        font-size: medium ;
     }
 
     .card-row {

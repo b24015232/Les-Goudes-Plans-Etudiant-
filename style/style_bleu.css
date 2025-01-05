@@ -20,7 +20,7 @@ body {
     font-family: Lalezar;
     margin: 0;
     padding: 0;
-    background: url(../images/background.jpg) repeat center center ;
+    background: url(../images/background.webp) repeat center center ;
     background-attachment: fixed ;
     background-size: auto; 
     
@@ -453,12 +453,13 @@ input:checked + label:after {
 .image-1{
     flex: 1;
     min-width: 300px;
-    padding: 20px;
+    padding: 40px;
 }
 
 .image-1 img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #4e6481;
+    margin: 100px;
 }
