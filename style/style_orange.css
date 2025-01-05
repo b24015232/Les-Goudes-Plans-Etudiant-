@@ -414,16 +414,18 @@ button:hover {
 
 .image-1{
     flex: 1;
-    max-width: 100% ;
+    max-width: 60% ;
     padding: 20px;
 }
 
 .image-1 img {
-    width: 100%;
+    width: 60%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
     min-width: 180px;
+    max-width: 50% ;
+    
 
     
 }
