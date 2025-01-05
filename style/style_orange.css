@@ -249,7 +249,7 @@ button:hover {
     background-color: #ffffff ;
 }
 
-.orange {
+.input {
     visibility: hidden;
 }
 
@@ -284,16 +284,22 @@ button:hover {
     display: none ;
   }
 
-
 @media screen and (max-width: 870px) {
 
-
+   
+    .show {
+        display: block; /* Affiche le menu */
+      }
 
     .topnav a, .dropdown .dropbtn {
       display: none;
     }
 
-
+   
+  
+    .dropdown input:checked ~ .dropdown-content {
+        display: block;
+      }
 
     .topnav a.icon {
       
@@ -303,6 +309,7 @@ button:hover {
     }
 
     
+
     .topnav.responsive {
         position: relative; 
         flex-direction: column;
