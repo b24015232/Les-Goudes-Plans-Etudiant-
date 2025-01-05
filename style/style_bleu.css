@@ -452,14 +452,13 @@ input:checked + label:after {
 
 .image-1{
     flex: 1;
-    min-width: 300px;
-    padding: 40px;
+    min-width: 100px;
+    padding: 20px;
 }
 
 .image-1 img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
-    border: 2px solid #4e6481;
-    margin: 100px;
+    border: none ;
 }

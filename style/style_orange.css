@@ -247,7 +247,7 @@ footer a {
 }
 
 p {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 
@@ -414,11 +414,11 @@ button:hover {
 .image-1{
     flex: 1;
     min-width: 100px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .image-1 img {
-    width: 80%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
