@@ -473,6 +473,6 @@ input:checked + label:after {
     margin-bottom: 50px;
     text-align: center;
     color: #f8f7f6;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 

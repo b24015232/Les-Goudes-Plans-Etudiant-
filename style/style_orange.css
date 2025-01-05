@@ -424,7 +424,23 @@ button:hover {
     border-radius: 8px;
     border: 2px solid #ffc16a;
     min-width: 180px;
+
+    
 }
+
+
+/*texte centré*/
+
+
+
+.text-2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+  
 
 @media screen and (max-width: 870px) {
 
@@ -448,6 +464,8 @@ button:hover {
         height: 0px;
         width: 0px ;
     }
+
+
 
     
 
@@ -576,8 +594,6 @@ button:hover {
     
     
 
-
-  
 
 
 }
