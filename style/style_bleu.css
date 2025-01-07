@@ -9,10 +9,6 @@
   padding: 0px;
 }
 
-@font-face {
-  font-family: "Lalezar";
-  src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
-}
 
 html { height: 100%; }
 
@@ -379,8 +375,6 @@ input:checked + label:after {
 }
 
 .card2 img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
 }
@@ -457,8 +451,6 @@ input:checked + label:after {
 }
 
 .image-1 img {
-    width: 100%;
-    height: auto;
     border-radius: 8px;
     border: none ;
 }

@@ -111,24 +111,25 @@
                 
                 <section class="card" id="presentation">
                     <h1>Vous souhaitez nous contacter ou faire partie de l’expérience ? Remplissez ce formulaire et contribuez directement à l’aventure, vos idées comptent !</h1>
-                <form target="_blank" action="https://formsubmit.co/lesgoudesplanetudiant@gmail.com" method="POST">
+                <form id="form" action="mailto:lesgoudesplanetudiant@gmail.com" method="post" enctype="text/plain">
                   <div class="form-group">
                     <div class="form-row">
                       <div class="col">
                         <input type="text" name="name" class="form-control" placeholder="Nom et Prénom " id="prenom" required>
+                        </div>
+                            <div class="col">
+                              <input type="email" name="email" class="form-control" placeholder="Email" id="mail" required>
+                            </div>
+                        </div>
                       </div>
-                      <div class="col">
-                        <input type="email" name="email" class="form-control" placeholder="Email" id="mail" required>
+                      <div class="form-group">
+                        <textarea placeholder="Votre message" class="form-control" name="message" rows="10" id="message" required></textarea>
                       </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <textarea placeholder="Votre message" class="form-control" name="message" rows="10" id="message" required></textarea>
-                  </div>
-                  <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer</button>
+                      <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer</button>
+                      </div>
                 </form>
-              </div>
-            </section>
+                </section>
+              
 </div>
 
 <footer>
