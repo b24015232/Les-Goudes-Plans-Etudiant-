@@ -454,7 +454,6 @@ button:hover {
     }
 
 
-
     
 
     /* adaptativité mobile et configuation du bouton hamburger */
@@ -464,7 +463,7 @@ button:hover {
       display: block;
     }
 
-
+    
     .topnav.responsive {
         position: relative; 
         flex-direction: column;
@@ -486,6 +485,7 @@ button:hover {
         float: none;
     }
 
+    
     .dropbtn {
         cursor: pointer;
         padding: 0px;
