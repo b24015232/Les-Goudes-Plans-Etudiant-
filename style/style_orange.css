@@ -10,13 +10,6 @@
 }
 
 
-/* police */
-
-
-@font-face {
-  font-family: "Lalezar";
-  src: url(fonts/lalezar/lalezar-regular.ttf) format("truetype");
-}
 
 html{
     height:100%;
@@ -27,7 +20,8 @@ html{
 /* Style body */
 
 body {
-    font-family: Lalezar;
+    font-family: 'Josefin Sans', sans-serif;
+    font-display: swap;
     margin: 0;
     padding: 0;
     background-color: #faecdc;
