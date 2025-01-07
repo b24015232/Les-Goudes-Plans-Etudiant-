@@ -9,10 +9,6 @@
   padding: 0px;
 }
 
-@font-face {
-  font-family: "Lalezar";
-  src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
-}
 
 html { height: 100%; }
 

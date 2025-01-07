@@ -13,10 +13,6 @@
 /* police */
 
 
-@font-face {
-  font-family: "Lalezar";
-  src: url(../fonts/lalezar/lalezar-regular.ttf) format("truetype");
-}
 
 html{
     height:100%;
