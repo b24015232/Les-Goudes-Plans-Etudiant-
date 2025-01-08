@@ -17,7 +17,7 @@ body {
     font-display: swap;
     margin: 0;
     padding: 0;
-    background: url(../images/background.webp) repeat center center ;
+    background-color: #43aced;
     background-attachment: fixed ;
     background-size: auto; 
     
@@ -54,7 +54,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #00000063; 
+    background: #2b5d8c; 
     margin-bottom: 20px;
     padding: 10px 0;
     position: relative;
@@ -170,7 +170,7 @@ footer a:hover {
     top: 126%;
     left: 50%;
     transform: translateX(-50%);
-    background: #00000063; 
+    background: #2b5d8c; 
     min-width: 10px ;
     text-align: center;
     
