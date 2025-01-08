@@ -156,7 +156,6 @@ footer a:hover {
 .dropdown {
     position: relative;
     display: inline-block;
-    
 }
 
 .dropbtn {
@@ -263,20 +262,15 @@ input:checked + label:after {
   
       .topnav.responsive .dropdown {
           float: none;
-          
       }
-    
 
       .dropbtn {
         cursor: pointer;
         padding: 0px;
     }
+
       .dropdown-content {
-       
-        background: #00000000; 
-       
-        
-        
+        background: #00000000;    
     }
       .topnav.responsive .dropdown-content {
           position: relative;

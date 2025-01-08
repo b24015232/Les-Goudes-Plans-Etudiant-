@@ -71,6 +71,7 @@ nav a {
     margin: 0 15px;
     letter-spacing: 1px;
     font-size: 1.5rem;
+    padding: 5px;
 }
 
 nav a:hover {
@@ -116,9 +117,6 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-
 
 /* menu mobile masqué */
 
@@ -174,7 +172,7 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 20px;
 }
 
 
@@ -484,19 +482,11 @@ button:hover {
     }
 
     
-    .dropbtn {
-        cursor: pointer;
-        padding: 0px;
-    }
 
     .topnav.responsive .dropdown-content {
         position: relative;
     }
   
-    .dropbtn {
-        cursor: pointer;
-        padding: 0px;
-    }
 
     /* adaptation header */
     header {
