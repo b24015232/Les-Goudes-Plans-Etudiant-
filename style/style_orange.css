@@ -195,11 +195,15 @@ footer a:hover {
 }
 
 .card2 img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .card2:hover img {
+    width: 100%;
+    height: auto;
     transform: scale(1.2);
     filter: blur(4px);
 }
@@ -239,6 +243,8 @@ footer a:hover {
 }
 
 .card img {
+    width: 100%;
+    height: auto;
     max-width: 100%;
     border-radius: 20px;
     margin-top: 20px;
@@ -363,12 +369,16 @@ iframe {
 }
 
 .card2 img {
+    width: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
     
 }
 
 .card2:hover img {
+    width: 100%;
+    height: auto;
     transform: scale(1.2);
     filter: blur(4px);
 }
@@ -440,6 +450,8 @@ iframe {
 }
 
 .image-1 img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     border: 2px solid #ffc16a;
 }
