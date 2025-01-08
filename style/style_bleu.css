@@ -207,7 +207,7 @@ input:checked + label:after {
         position: absolute;
         top: 1px;
         left: 9px; /* Position initiale du cercle */
-        background: linear-gradient(180deg, #f8f7f6, #FFD700);
+        background: linear-gradient(180deg, #f8f7f6, #38caff);
         border-radius: 180px;
         transition: left 0.1s ease; /* Transition pour le déplacement du cercle */
     }
