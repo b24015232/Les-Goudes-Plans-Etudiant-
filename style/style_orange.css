@@ -171,9 +171,6 @@ footer a:hover {
 
 /* Style des cards et des conteneurs au sein de toutes les pages */
 
-.container {
-    padding: 20px;
-}
 
 .card {
     background: #E0EDF6;
@@ -368,6 +365,7 @@ iframe {
 .card2 img {
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
+    
 }
 
 .card2:hover img {
