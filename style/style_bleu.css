@@ -10,7 +10,10 @@
 }
 
 
-html { height: 100%; }
+html { 
+    height: 100%; 
+
+}
 
 body {
     font-family: 'Josefin Sans', sans-serif;
@@ -18,7 +21,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #43aced;
-    background-attachment: fixed ;
     background-size: auto; 
     
 }
@@ -32,7 +34,14 @@ header {
     height: 100px; 
 }
 
+header h1 {
+    margin: 0;
+    letter-spacing: 2.1px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
 
+/* style logo*/
 
 .logo {
     position: absolute; 
@@ -43,12 +52,7 @@ header {
     
 }
 
-header h1 {
-    margin: 0;
-    letter-spacing: 2.1px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
+/* Style menu de navigation version ordinateur */
 
 nav {
     width: 100%;
@@ -76,83 +80,7 @@ nav a:hover {
     text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
 }
 
-.fixed { /*fixed = ancrage*/
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #118AD5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-}
-
-.fixed:hover {
-    background-color: #0E74B3;
-}
-
-
-footer {
-    text-align: center;
-    background: #00000063; 
-    padding: 30px;
-    color: white;
-    margin-top: 20px;
-
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #FFD700;
-    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
-}
-
-.container {
-    padding: 20px;
-}
-
-.card {
-    background: #33799375; 
-    border-radius: 20px;
-    color: #dedede;
-    text-shadow: 0px 2px 5px rgba(81, 81, 81, 0.6);
-    margin: 40px auto;
-    padding: 30px;
-    max-width: 900px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    letter-spacing: 1px;
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.card-row {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-
-.card-row .card {
-    flex: 1;
-    max-width: 45%;
-}
-
+/* Dropdown button */
 .dropdown {
     position: relative;
     display: inline-block;
@@ -163,6 +91,7 @@ footer a:hover {
     padding: 10px;
 }
 
+/* Dropdown et contenu */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -185,10 +114,92 @@ footer a:hover {
     
 }
 
+/* Afficher le menu au survol */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+
+
+/* Style bouton d'ancrage */
+
+.fixed { /*fixed = ancrage*/
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #118AD5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.fixed:hover {
+    background-color: #0E74B3;
+}
+
+/*style footer*/
+
+footer {
+    text-align: center;
+    background: #00000063; 
+    padding: 30px;
+    color: white;
+    margin-top: 20px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFD700;
+    text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
+}
+
+/* Style des cards et des conteneurs*/
+.container {
+    padding: 20px;
+}
+
+.card {
+    background: #33799375; 
+    border-radius: 20px;
+    color: #dedede;
+    text-shadow: 0px 2px 5px rgba(81, 81, 81, 0.6);
+    margin: 5% auto;
+    padding: 30px;
+    max-width: 900px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.card-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.card-row .card {
+    flex: 1;
+    max-width: 45%;
+}
 
 .dark {
     width: 50px;
@@ -454,7 +465,6 @@ input:checked + label:after {
     display: flex;
     align-items: center;
     color: #e8e8e8;
-    letter-spacing: 0.5px;
 }
 
 .image-1{

@@ -25,6 +25,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #faecdc;
+    background-size: auto;
 }
 
 /* Style header */
@@ -88,7 +89,6 @@ nav a:hover {
 }
 
 /* Dropdown et contenu */
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -395,7 +395,6 @@ button:hover {
     display: flex;
     align-items: center;
     min-width: 300px;
-    letter-spacing: 0.5px;
     
 }
 
