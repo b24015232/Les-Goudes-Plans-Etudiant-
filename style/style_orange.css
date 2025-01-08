@@ -71,6 +71,7 @@ nav a {
     margin: 0 15px;
     letter-spacing: 1px;
     font-size: 1.5rem;
+    padding: 0px;
 }
 
 nav a:hover {
@@ -116,9 +117,6 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
-
-
 
 /* menu mobile masqué */
 
@@ -174,7 +172,7 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    padding: 20px;
 }
 
 
@@ -405,13 +403,12 @@ button:hover {
     flex: 1;
     padding: 20px;
     max-width: 100% ;
+    text-align: center;
 }
 
 .image-1 img {
     border-radius: 8px;
     border: 2px solid #ffc16a;
-
-
 }
 
 
@@ -431,8 +428,12 @@ button:hover {
 @media screen and (max-width: 870px) {
 
    
-   /* menu de navigation ordinateur masqué */
+   /* menu de navigation ordinateur masqué et adaptation du nav */
 
+    nav a {
+    padding: 3px;
+    }
+    
     .topnav a, .dropdown .dropbtn {
       display: none;
     }
@@ -484,19 +485,11 @@ button:hover {
     }
 
     
-    .dropbtn {
-        cursor: pointer;
-        padding: 0px;
-    }
 
     .topnav.responsive .dropdown-content {
         position: relative;
     }
   
-    .dropbtn {
-        cursor: pointer;
-        padding: 0px;
-    }
 
     /* adaptation header */
     header {
