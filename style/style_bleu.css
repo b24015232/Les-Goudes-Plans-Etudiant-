@@ -225,6 +225,24 @@ input:checked + label:after {
     display: none ;
   }
 
+
+  .btn-retour {
+    position: fixed; 
+    bottom: 20px; 
+    left: 20px; /* À 20px du bord gauche */
+    background-color: #118AD5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .btn-retour:hover {
+    background-color: #0E74B3;
+  }
   
 
 @media screen and (max-width: 870px) {
