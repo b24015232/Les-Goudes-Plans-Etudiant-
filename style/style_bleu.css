@@ -20,7 +20,7 @@ body {
     font-display: swap;
     margin: 0;
     padding: 0;
-    background-color: #43aced;
+    background-color: #4fb0ed;
     background-size: auto; 
     
 }
@@ -47,10 +47,7 @@ header h1 {
     position: absolute; 
     top: 10px;
     left: 30px; 
-    height: 90px;
-    width: auto; 
-    
-}
+  }
 
 /* Style menu de navigation version ordinateur */
 
