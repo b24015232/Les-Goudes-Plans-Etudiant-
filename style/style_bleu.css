@@ -1,75 +1,27 @@
 @charset "utf-8";
 
-*
-{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-}
 
-
-html { 
-    height: 100%; 
-
-}
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-display: swap;
-    margin: 0;
-    padding: 0;
-    background-color: #4fb0ed;
-    background-size: auto; 
-    
+    background-color: #4fb0ed; 
 }
 
 header {
     background : #00000000;
-    background-size: cover ;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    height: 100px; 
 }
 
 header h1 {
-    margin: 0;
-    letter-spacing: 2.1px;
-    font-size: 2.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-
-/* style logo*/
-
-.logo {
-    position: absolute; 
-    top: 10px;
-    left: 30px; 
-  }
 
 /* Style menu de navigation version ordinateur */
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: center;
     background: #2b5d8c; 
-    margin-bottom: 20px;
-    padding: 10px 0;
-    position: relative;
-
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    letter-spacing: 1px;
-    font-size: 1.5em;
     transition: color 0.3s, text-shadow 0.3s;
-    
 }
 
 nav a:hover {
@@ -77,61 +29,19 @@ nav a:hover {
     text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.6);
 }
 
-/* Dropdown button */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropbtn {
-    cursor: pointer;
-    padding: 10px;
-}
-
 /* Dropdown et contenu */
 .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 126%;
-    left: 50%;
-    transform: translateX(-50%);
     background: #2b5d8c; 
-    min-width: 10px ;
-    text-align: center;
-    
-    
 }
 
 .dropdown-content a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 1px;
-    display: block;
-    transition: background-color 5s;
-    
+    transition: background-color 5s;  
 }
-
-/* Afficher le menu au survol */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-
 
 /* Style bouton d'ancrage */
 
 .fixed { /*fixed = ancrage*/
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
     background-color: #118AD5;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
 }
 
 .fixed:hover {
@@ -162,40 +72,12 @@ footer a:hover {
 }
 
 /* Style des cards et des conteneurs*/
-.container {
-    padding: 20px;
-}
 
 .card {
     background: #33799375; 
-    border-radius: 20px;
     color: #dedede;
     text-shadow: 0px 2px 5px rgba(81, 81, 81, 0.6);
-    margin: 5% auto;
-    padding: 30px;
-    max-width: 900px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
 
-.card img {
-    max-width: 100%;
-    border-radius: 20px;
-    margin-top: 20px;
-}
-
-.card-row {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-
-.card-row .card {
-    flex: 1;
-    max-width: 45%;
 }
 
 .dark {
@@ -382,63 +264,6 @@ input:checked + label:after {
   
 /*card pour les activitees culturelles*/
 /*style, alignement, overlay, survol, texte et images*/
-
-
-.card2 {
-    position: relative;
-    width: 250px; 
-    height: 250px;
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    margin: 25px; 
-}
-
-.card2 img {
-    object-fit: cover;
-    transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.card2:hover img {
-    transform: scale(1.2);
-    filter: blur(4px);
-}
-
-.card2 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #0099d546;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-}
-
-.card2 .overlay h2 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 0;
-}
-
-.card2:hover .overlay {
-    opacity: 1;
-}
-
-
-.card-row2 {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
 
 
 /*partie plages*/

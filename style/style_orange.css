@@ -2,11 +2,11 @@
 
 *
 {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  margin:0px;
-  padding:0px;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -21,7 +21,6 @@ html{
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-display: swap;
     margin: 0;
     padding: 0;
     background-color: #faecdc;
@@ -40,7 +39,6 @@ header {
 }
 
 header h1 {
-    
     margin: 0;
     letter-spacing: 2.1px;
     font-size: 2.5em;
@@ -77,7 +75,6 @@ nav a {
 
 nav a:hover {
     color: #FAB478;
-
 }
 
 
@@ -110,7 +107,7 @@ nav a:hover {
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    transition: background-color 0.3s;
+    transition: background-color 5s;
 }
 
 /* Afficher le menu au survol */
@@ -128,9 +125,6 @@ nav a:hover {
 .topnav {
     display: none;
 }
-
-/* Bouton hamburger masqué */
-
 
 /* Style bouton d'ancrage */
 
@@ -156,10 +150,6 @@ nav a:hover {
 
 /* Style footer */
 
-footer a:hover {
-    color: #FAB478;
-}
-
 footer {
     text-align: center;
     background: url(../images/Rocher_des_Goudes.webp) no-repeat center center;
@@ -175,6 +165,9 @@ footer a {
     padding: 20px;
 }
 
+footer a:hover {
+    color: #FAB478;
+}
 
 /* Style des cards et des conteneurs au sein de toutes les pages */
 
@@ -193,25 +186,65 @@ footer a {
     text-align: center;
 }
 
-.card3 {
-    background: transparent;
-    border-radius: 20px;
-    color: #333;
-    margin: 5px auto;
-    padding: 30px;
-    max-width: 900px;
-    text-align: center;
+.card2 {
+    position: relative;
+    width: 250px; 
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    margin: 25px; 
 }
-.card3 img {
-    
-    border-radius: 20px;
-    margin-top: 5px;
+
+.card2 img {
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.card2:hover img {
+    transform: scale(1.2);
+    filter: blur(4px);
+}
+
+.card2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0099d546;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+
+.card2 .overlay h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.card2:hover .overlay {
+    opacity: 1;
+}
+
+
+.card-row2 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .card img {
-
+    max-width: 100%;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 
@@ -268,7 +301,6 @@ section input, textarea {
 
 textarea {
     width: 90%
-    
 }
 
 button {
@@ -286,13 +318,15 @@ button:hover {
     visibility: hidden;
 }
 
+/* style mode bleu */
+
 .dark {
     width: 50px;
     height: 20px;
     position: relative;
     margin-left: 5px;
     display: block;
-    background: #ffffff4c;
+    background: #636e9260;
     border-radius: 200px;
     cursor: pointer;
 }
@@ -368,7 +402,6 @@ iframe {
     opacity: 1;
 }
 
-
 .card-row2 {
     display: flex;
     gap: 20px;
@@ -377,9 +410,7 @@ iframe {
     flex-wrap: wrap;
 }
 
-
 /*partie plages et parcs*/
-
 
 .section-1, .section-2 {
     display: flex;
@@ -390,7 +421,6 @@ iframe {
 }
 
 .section-2 {
-    flex-direction: reverse;
     background-color: #ff8c003e;
 }
 
